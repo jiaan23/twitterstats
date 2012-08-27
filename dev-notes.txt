@@ -1,0 +1,5 @@
+
+Maven command to add eclipse support (http://www.mkyong.com/maven/maven-dependency-libraries-not-deploy-in-eclipse-ide/)
+mvn eclipse:eclipse -Dwtpversion=2.0
+
+

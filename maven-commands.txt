@@ -1,0 +1,3 @@
+mvn archetype:create -DgroupId=net.infoforrest.twitterstats -DartifactId=twitterstats-model -Dpackagename=net.infoforrest.twitterstats.model
+mvn archetype:create -DgroupId=net.infoforrest.twitterstats -DartifactId=twitterstats-consumer -Dpackagename=net.infoforrest.twitterstats.consumer
+mvn archetype:create -DgroupId=net.infoforrest.twitterstats -DartifactId=twitterstats-web -Dpackagename=net.infoforrest.twitterstats.web -DarchetypeArtifactId=maven-archetype-webapp

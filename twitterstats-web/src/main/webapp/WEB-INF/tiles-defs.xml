@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<definition name="base" template="/WEB-INF/jsps/layouts/base.jsp">
+		<put-attribute name="title" value="TwitterStats" />
+		<put-attribute name="header" value="/WEB-INF/jsps/layouts/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsps/layouts/body.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsps/layouts/menu.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsps/layouts/footer.jsp" />
+
+		<put-attribute name="head.additional" value="" cascade="true" />
+	</definition>
+
+	<definition name="home" extends="base">
+		<put-attribute name="menu" value="/WEB-INF/jsps/layouts/menu.jsp?page=home" />
+		<put-attribute name="body" value="/WEB-INF/jsps/home.jsp" />
+	</definition>
+
+	<definition name="twitter/callback" extends="base">
+		<put-attribute name="menu" value="/WEB-INF/jsps/layouts/menu.jsp?page=home" />
+		<put-attribute name="body" value="/WEB-INF/jsps/twitter/callback.jsp" />
+	</definition>
+
+	<definition name="twitter/authRequired" extends="base">
+		<put-attribute name="menu" value="/WEB-INF/jsps/layouts/menu.jsp?page=home" />
+		<put-attribute name="body" value="/WEB-INF/jsps/twitter/authRequired.jsp" />
+	</definition>
+
+	<definition name="admin/home" extends="base">
+		<put-attribute name="menu" value="/WEB-INF/jsps/layouts/menu.jsp?page=home" />
+		<put-attribute name="body" value="/WEB-INF/jsps/admin/home.jsp" />
+	</definition>
+</tiles-definitions>
